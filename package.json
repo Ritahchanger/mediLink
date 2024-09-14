@@ -1,0 +1,47 @@
+{
+  "dependencies": {
+    "axios": "^1.6.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.4.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.6",
+    "react-multi-carousel": "^2.8.4",
+    "react-router-dom": "^6.10.0",
+    "uuid": "^9.0.1"
+  },
+  "name": "ehealth",
+  "version": "2.0.0",
+  "description": "health care",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder.js -d",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HridoyHazard/eHealth-Mern-.git"
+  },
+  "author": "Shahadat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HridoyHazard/eHealth-Mern-/issues"
+  },
+  "homepage": "https://github.com/HridoyHazard/eHealth-Mern-#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.1"
+  }
+}
